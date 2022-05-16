@@ -70,15 +70,26 @@ UiPathのRPAを活用して、日本企業の「少量多品種業務」の自�
 <a href="https://academy.uipath.com/jp">https://academy.uipath.com/jp</a>
 
 ●UiPathをバッチで実行
-参考記事：
-<a href="https://ittrip.xyz/uipath/bat">https://ittrip.xyz/uipath/bat</a>
 
-call 　｛ロボットのEXEファイル｝　execute  file　｛作成したxamlファイル｝
+<textarea name="kansou" rows="15" cols="230">
+echo off
 
-●UiPathのインストール
-参考記事：
-<a href="https://www.utj.co.jp/uipath-studio-install/">https://www.utj.co.jp/uipath-studio-install/</a>
+rem ***************************************
+rem *  UiRobot★実行用バッチプログラム
+rem ***************************************
+cd C:\Users\xxxxx\AppData\Local\Programs\UiPath\Studio\
+set PATH_NAME="C:\Users\xxxxx\OneDrive\ドキュメント\UiPath\＜チュートリアル＞ライブラリに Web サービスを読み込む\１）政府の統計情報サイトから人口などのデータをテキストファイルに出力する例\１）政府の統計情報サイトからデータ出力例\空のライブラリ\
+cls
+echo %DATE% %TIME% UiRobot★実行 start ..
+UiRobot.exe execute --file %PATH_NAME%空のライブラリ.1.0.1.nupkg"
+echo %DATE% %TIME% UiRobot★実行しました!
+pause
+</textarea>
 
+<figure>
+<legend>UiPath_01.JPG</legend>
+<img src="UiPath_01.JPG" alt="UiPath_01.JPG" width="70%" height="70%">
+</figure>
 </pre>
 </body>
 </html>
