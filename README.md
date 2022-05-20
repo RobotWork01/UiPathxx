@@ -13,7 +13,7 @@ https://robotwork01.github.io/UiPath/UiPath_01.html
 
 <h1>e-stat API取得手順</h1>
 動画： <br/>
-<span>次のURLをクリックすると動画をダウンロードます。ダウンロードされた動画をご覧ください。</span>
+<span>次のURLをクリックすると、GitHub APIにて動画をダウンロードます。ダウンロードされた動画をご覧ください。</span>
 <p>https://github.com/RobotWork01/UiPath/raw/main/UiPath_01%E2%98%85API%E5%8F%96%E5%BE%97.mp4　<br/>
 <pre>
  <a href="https://github.com/RobotWork01/UiPath/blob/main/UiPath_01%E2%98%85API%E5%8F%96%E5%BE%97.mp4">動画ファイル参照はこちら ・・・Git LFS にて、保存されています</a>
