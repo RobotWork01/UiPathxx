@@ -2,7 +2,7 @@
 <h1>例）政府の統計情報サイトから人口などのデータを取得する。</h1>
 
 GitHub Pageはこちら 👨‍🏫 🏌️‍♀️ 🌷🌷🌷🍂🍂🍂<br/>
-https://robotwork01.github.io/UiPath/UiPath.html
+https://robotwork01.github.io/UiPath/UiPath_01.html
 
 参考記事：<br/>
 &nbsp;&nbsp; https://dekiru.net/article/18065/?msclkid=727e9daaceb911eca5bb719184958114
@@ -11,6 +11,10 @@ https://robotwork01.github.io/UiPath/UiPath.html
  クラウドサービスとして提供されているAIを使って
  UiPathからデータ分析をする。</pre>
 
+<h1>e-stat API取得手順</h1>
+動画： <br/>
+add https://robotwork01.github.io/UiPath/UiPath_01★API取得.mp4 <br/>
+<br/>
 ●政府の統計情報サイト
 https://www.e-stat.go.jp/
 <br/>
