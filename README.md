@@ -1,6 +1,54 @@
 # UiPath
+<h1>例）政府の統計情報サイトから人口などのデータを取得する。</h1>
 
-実行結果（動画）はこちら 👨‍🏫👨‍💻🕵️‍♂️
-<br/> 
-https://user-images.githubusercontent.com/105484854/169505322-3a056915-2d18-4c84-bd24-1a4dbbaf5142.mp4
+GitHub Pageはこちら 👨‍🏫 🏌️‍♀️ 🌷🌷🌷🍂🍂🍂<br/>
+https://robotwork01.github.io/UiPath/UiPath.html
 
+参考記事：<br/>
+&nbsp;&nbsp; https://dekiru.net/article/18065/?msclkid=727e9daaceb911eca5bb719184958114
+<pre>できるネット【できるUiPath】REST APIとJSONを活用して外部のWebサービスと連携させよう
+ GoogleやTwitterなどの各種サービスを利用したり、
+ クラウドサービスとして提供されているAIを使って
+ UiPathからデータ分析をする。</pre>
+
+●政府の統計情報サイト
+https://www.e-stat.go.jp/
+<br/>
+１）次のトップページを表示する。 <br/>
+　　https://www.e-stat.go.jp/ <br/>
+２）ラベル名「統計 <br/>データを活用する」の「地域」アイコンをクリックする。 <br/>
+３）ラベル名「都道府県・市区町村のすがた（社会・人口統計体系）」の <br/>
+「都道府県データ」を選択した後に、「データ表示」アイコンをクリックする。<br/>
+４）次のURLに自動的に遷移する。 <br/>
+　　https://www.e-stat.go.jp/regional-statistics/ssdsview/prefectures <br/>
+５）地域候補４８地域の全てを選択した後に、確定ボタンをクリックする。 <br/>
+６）項目候補５６８項目の中から下記の項目を選択した後に、確定ボタンをクリックすると自動的に画面遷移する。 <br/>
+<pre>
+総人口（人）
+総人口（男）（人）
+総人口（女）（人）
+日本人人口（人）
+日本人人口（男）（人）
+日本人人口（女）（人）
+</pre>
+７）次のURLへ自動的に遷移する。 <br/>
+https://www.e-stat.go.jp/regional-statistics/ssdsview/prefectures  
+<pre>
+WEB画面上には、統計表表示タブ、グラフ表示タブ、ダウンロードボタン、APIボタンが表示される。 
+APIボタンをクリックすると下記のURLが取得出来る： 
+●トップページでログインした後に、マイページ表示画面にて、アプリケーションIDを取得する。 
+</pre>
+＜アプリケーションIDの取得＞ <br/>
+<pre>
+手順：必要な項目を入力した後に「発行」ボタンをクリックする。
+API＋APPID（アプリケーションID）： 
+手順：appId=に発行され取得したアプリケーションIDを記入して、URLを書き換える。
+</pre>
+<hr>
+<h3>実行画面</h3><br/>
+
+https://user-images.githubusercontent.com/105484854/168560302-a080a803-90c6-4d4a-8808-0f1359a8ecb4.mp4
+
+# License
+"RobotWork01/UiPath" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+ 
