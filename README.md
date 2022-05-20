@@ -11,6 +11,9 @@ https://robotwork01.github.io/UiPath/UiPath_01.html
  クラウドサービスとして提供されているAIを使って
  UiPathからデータ分析をする。</pre>
 
+<h1>e-stat API取得手順</h1>
+add https://git-lfs.github.com/spec/v1/UiPath_01★API取得.mp4
+
 ●政府の統計情報サイト
 https://www.e-stat.go.jp/
 <br/>
