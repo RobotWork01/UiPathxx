@@ -1,63 +1,62 @@
-### 文書番号：UiPath_01
-<h1>WEBサイトからデータをJsonファイル形式で取得する例</h1>
+# UiPathとは？
+UiPath（ユーアイパス）は米UiPath社の製品です。
+2017年には日本法人が設立された。
+元マイクロソフト社員がWindowsアプリのオートメーションを目的に開発。
+### 次の３つの機能群を別々の製品として提供。
+1. 開発機能を持つ「UiPath Studio」     （ユーアイパス・スタジオ）
+2. 管理機能を持つ「UiPathOrchestrator」（ユーアイパス・オーケストレータ）
+3. 実行機能を持つ「UiPath Robot」      （ユーアイパス・ロボット）
 
-GitHub Pageはこちら 👨‍🏫 🏌️‍♀️ 🌷🌷🌷🍂🍂🍂<br/>
-https://robotwork01.github.io/UiPath/UiPath_01.html
+※小規模から大規模まで幅広く対応する「小さく始めて大きく育てる」RPAツールである。
+UiPathのRPAを活用して、日本企業の「少量多品種業務」の自動化による
+「日本の働き方改革」を実現し、日本から世界へ新しい「働き方」を提案しましょう。
 
-参考記事：<br/>
-&nbsp;&nbsp; https://dekiru.net/article/18065/?msclkid=727e9daaceb911eca5bb719184958114
-<pre>できるネット【できるUiPath】REST APIとJSONを活用して外部のWebサービスと連携させよう
- GoogleやTwitterなどの各種サービスを利用したり、
- クラウドサービスとして提供されているAIを使って
- UiPathからデータ分析をする。</pre>
+### 参考URL:
+[https://rpa.bigtreetc.com/products/](https://rpa.bigtreetc.com/products/) 
 
-<h1>e-stat API取得手順</h1>
-動画： <br/>
-<span>次のURLをクリックすると、GitHub APIにて動画をダウンロードます。ダウンロードされた動画をご覧ください。</span>
-<p>https://github.com/RobotWork01/UiPath/raw/main/UiPath_01%E2%98%85API%E5%8F%96%E5%BE%97.mp4　<br/>
-<pre>
- <a href="https://github.com/RobotWork01/UiPath/blob/main/UiPath_01%E2%98%85API%E5%8F%96%E5%BE%97.mp4">動画ファイル参照はこちら ・・・Git LFS にて、保存されています</a>
-</pre>
-</p>
+[https://www.uipath.com/ja/company/about-us](https://www.uipath.com/ja/company/about-us) 
 
-●政府の統計情報サイト
-https://www.e-stat.go.jp/
-<br/>
-１）次のトップページを表示する。 <br/>
-　　https://www.e-stat.go.jp/ <br/>
-２）ラベル名「統計 <br/>データを活用する」の「地域」アイコンをクリックする。 <br/>
-３）ラベル名「都道府県・市区町村のすがた（社会・人口統計体系）」の <br/>
-「都道府県データ」を選択した後に、「データ表示」アイコンをクリックする。<br/>
-４）次のURLに自動的に遷移する。 <br/>
-　　https://www.e-stat.go.jp/regional-statistics/ssdsview/prefectures <br/>
-５）地域候補４８地域の全てを選択した後に、確定ボタンをクリックする。 <br/>
-６）項目候補５６８項目の中から下記の項目を選択した後に、確定ボタンをクリックすると自動的に画面遷移する。 <br/>
-<pre>
-総人口（人）
-総人口（男）（人）
-総人口（女）（人）
-日本人人口（人）
-日本人人口（男）（人）
-日本人人口（女）（人）
-</pre>
-７）次のURLへ自動的に遷移する。 <br/>
-https://www.e-stat.go.jp/regional-statistics/ssdsview/prefectures  
-<pre>
-WEB画面上には、統計表表示タブ、グラフ表示タブ、ダウンロードボタン、APIボタンが表示される。 
-APIボタンをクリックすると下記のURLが取得出来る： 
-●トップページでログインした後に、マイページ表示画面にて、アプリケーションIDを取得する。 
-</pre>
-＜アプリケーションIDの取得＞ <br/>
-<pre>
-手順：必要な項目を入力した後に「発行」ボタンをクリックする。
-API＋APPID（アプリケーションID）： 
-手順：appId=に発行され取得したアプリケーションIDを記入して、URLを書き換える。
-</pre>
-<hr>
-<h3>実行画面</h3><br/>
+### ＜UiPath社について（c 2017-2022 UiPath K.K.）＞
+UiPath社は2005年にルーマニアで創業した会社で、世界的なRPAソフトウェアベンダーです。
+本社はニューヨークにあり、ロンドン、ベンガルール、パリ、シンガポール、東京、ワシントンDCに
+オフィスがあります。
+UiPathのRPAソリューションは世界で4,000社以上に導入されました。
+時価総額は7,700億円相当です。※2019年9月時点
+日本法人は2017年2月に設立、2021年4月21日ニューヨーク証券所上場。
+金融機関、製造業、流通業や自治体など、日本国内において1,000社以上の導入実績があります。
 
-https://user-images.githubusercontent.com/105484854/168560302-a080a803-90c6-4d4a-8808-0f1359a8ecb4.mp4
+### 参考URL:
+[https://www.uipath.com/ja/](https://www.uipath.com/ja/) 
 
-# License
-"RobotWork01/UiPath" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
- 
+[https://nekotaro-retire.com/path-uipath/](https://nekotaro-retire.com/path-uipath/)
+
+# RPAとは？
+ロボティック・プロセス・オートメーション(Robotic Process Automation)です。
+RPAと記述し、アールピーエーと呼びます。
+
+# 「UiPath」のライセンス
+「UiPath」のライセンスには、２つのライセンスがあります。
+１）有償ライセンス
+    UiPath Enterprise RPA Platform（エンタープライズ・アールピーエー・プラットフォーム）
+２）無償トライアルライセンス
+    UiPath Community Edition（コミュニティ・エディション）
+
+    ※有償ライセンスにおいても始めは６０日間は、無料で利用可能であり、
+    簡単な登録とインストールのみですぐに使うことが出来ます。
+
+    ※無償トライアルライセンス：UiPath Community Edition
+    個人ユーザーやエンタープライズ 、その他の法人 による
+    利用を目的とした無料ライセンスです。
+
+    次の３つ機能で構成されています。
+    １．「UiPath Studio」自動化するロボットを開発する機能です。
+    ２．「UiPath Robot」 ロボットの管理統制を行う機能です。
+    ３．「UiPath Orchestrator Community Edition」「UiPath Studio」で開発されたロボットの実行を行う機能です。
+
+    サポートが受けられるのはフォーラム上のみで、
+    オンライントレーニングのUiPathアカデミーを無償で利用することが出来ます。
+
+# ●UiPathアカデミー（ユーアイパス・アカデミー）
+https://academy.uipath.com/jp
+
+
